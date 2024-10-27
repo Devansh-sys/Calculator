@@ -44,8 +44,9 @@
             width: 24%;
             font-size: x-large;
             border: black 1px solid;
+            border-radius: 15px;
         }
-        .number{
+        .number,.float{
             background-color: mediumseagreen;
         }
         .operator{
@@ -53,40 +54,42 @@
         }
 
     </style>
+
+    <script src="index.js"></script>
 </head>
 <body>
     <div id="calcContainer">
-        <div id="screenDisplay">
+        <div id="screenDisplay" style="font-size:90px;font-weight: lighter;text-align: end">
 
         </div>
         <div class="horizontalContainer">
-            <button class="calcKeysBtn" style="background-color: indianred">AC</button>
-            <button class="calcKeysBtn operator">+/-</button>
-            <button class="calcKeysBtn operator">%</button>
-            <button class="calcKeysBtn operator">/</button>
+            <button class="calcKeysBtn" style="background-color: indianred" type="button" value="clear">AC</button>
+            <button class="calcKeysBtn operator" type="button" value="negation">+/-</button>
+            <button class="calcKeysBtn operator" type="button" value="percent">%</button>
+            <button class="calcKeysBtn operator" type="button" value="/">/</button>
         </div>
         <div class="horizontalContainer">
-            <button class="calcKeysBtn number">7</button>
-            <button class="calcKeysBtn number">8</button>
-            <button class="calcKeysBtn number">9</button>
-            <button class="calcKeysBtn operator">*</button>
+            <button class="calcKeysBtn number" type="button" value="7">7</button>
+            <button class="calcKeysBtn number" type="button" value="8">8</button>
+            <button class="calcKeysBtn number" type="button" value="9">9</button>
+            <button class="calcKeysBtn operator" type="button" value="*">*</button>
         </div>
         <div class="horizontalContainer">
-            <button class="calcKeysBtn number">4</button>
-            <button class="calcKeysBtn number">5</button>
-            <button class="calcKeysBtn number">6</button>
-            <button class="calcKeysBtn operator">-</button>
+            <button class="calcKeysBtn number" type="button" value="4">4</button>
+            <button class="calcKeysBtn number" type="button" value="5">5</button>
+            <button class="calcKeysBtn number" type="button" value="6">6</button>
+            <button class="calcKeysBtn operator" type="button" value="-">-</button>
         </div>
         <div class="horizontalContainer">
-            <button class="calcKeysBtn number">1</button>
-            <button class="calcKeysBtn number">2</button>
-            <button class="calcKeysBtn number">3</button>
-            <button class="calcKeysBtn operator">+</button>
+            <button class="calcKeysBtn number" type="button" value="1">1</button>
+            <button class="calcKeysBtn number" type="button" value="2">2</button>
+            <button class="calcKeysBtn number" type="button" value="3">3</button>
+            <button class="calcKeysBtn operator" type="button" value="+">+</button>
         </div>
         <div class="horizontalContainer">
-            <button class="calcKeysBtn number" style="width: 49.2%">0</button>
-            <button class="calcKeysBtn number">.</button>
-            <button class="calcKeysBtn" style="background-color: #36c400">=</button>
+            <button class="calcKeysBtn number" type="button" value="0" style="width: 49.2%">0</button>
+            <button class="calcKeysBtn float" type="button" value=".">.</button>
+            <button class="calcKeysBtn" type="button" value="=" style="background-color: #36c400">=</button>
         </div>
     </div>
 

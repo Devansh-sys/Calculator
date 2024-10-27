@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CALC</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        #calcContainer{
+            border: 5px solid black;
+            height: 500px;
+            width: 400px;
+            background-color: black;
+        }
+
+        #screenDisplay{
+            box-sizing: border-box;
+            background-color: #b09696;
+            height: 20%; /*hence height of every vertical boxes will 80/5 that is 16%*/
+            width: 98%;
+            margin : 1%;
+            /*margin-top: 0px;*/
+
+        }
+        .horizontalContainer{
+            height: 15%;
+            box-sizing: border-box;
+            margin: 1%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .calcKeysBtn{
+            height: 100%;
+            width: 24%;
+            font-size: x-large;
+            border: black 1px solid;
+        }
+        .number{
+            background-color: mediumseagreen;
+        }
+        .operator{
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="calcContainer">
+        <div id="screenDisplay">
+
+        </div>
+        <div class="horizontalContainer">
+            <button class="calcKeysBtn" style="background-color: indianred">AC</button>
+            <button class="calcKeysBtn operator">+/-</button>
+            <button class="calcKeysBtn operator">%</button>
+            <button class="calcKeysBtn operator">/</button>
+        </div>
+        <div class="horizontalContainer">
+            <button class="calcKeysBtn number">7</button>
+            <button class="calcKeysBtn number">8</button>
+            <button class="calcKeysBtn number">9</button>
+            <button class="calcKeysBtn operator">*</button>
+        </div>
+        <div class="horizontalContainer">
+            <button class="calcKeysBtn number">4</button>
+            <button class="calcKeysBtn number">5</button>
+            <button class="calcKeysBtn number">6</button>
+            <button class="calcKeysBtn operator">-</button>
+        </div>
+        <div class="horizontalContainer">
+            <button class="calcKeysBtn number">1</button>
+            <button class="calcKeysBtn number">2</button>
+            <button class="calcKeysBtn number">3</button>
+            <button class="calcKeysBtn operator">+</button>
+        </div>
+        <div class="horizontalContainer">
+            <button class="calcKeysBtn number" style="width: 49.2%">0</button>
+            <button class="calcKeysBtn number">.</button>
+            <button class="calcKeysBtn" style="background-color: #36c400">=</button>
+        </div>
+    </div>
+
+</body>
+</html>
